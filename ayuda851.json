@@ -38,13 +38,13 @@
       "css": [
         "https://cdn.statically.io/gh/everisEquipoGIS/PLG-COMUNICACION-CATASTRO/main/plg_comunicacion_catastro.ol.min.css",
         "https://cdn.statically.io/gh/everisEquipoGIS/incendio/main/managelayers.min.css",
-        "https://cdn.statically.io/gh/everisEquipoGIS/incendio/c18ff21/geoperfil/estiloGeoperfil.css"
+        "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/c18ff21/estiloGeoperfil.css"
       ]
     },
     "final": {
       "js": [
-        "https://cdn.statically.io/gh/everisEquipoGIS/incendio/11eee8f/geoperfil/capas.js",
-        "https://cdn.statically.io/gh/everisEquipoGIS/incendio/3c69b3d/geoperfil/plugins.js"
+        "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/11eee8f/capas.js",
+        "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/c421578/plugins.js"
       ],
       "css": []
     }
