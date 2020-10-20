@@ -32,12 +32,8 @@
   "scripts": {
     "inicio": {
       "js": [
-        "https://cdn.statically.io/gh/everisEquipoGIS/PLG-COMUNICACION-CATASTRO/main/plg_comunicacion_catastro.ol.min.js",
-        "https://cdn.statically.io/gh/everisEquipoGIS/incendio/main/managelayers.ol.min.js"
       ],
       "css": [
-        "https://cdn.statically.io/gh/everisEquipoGIS/PLG-COMUNICACION-CATASTRO/main/plg_comunicacion_catastro.ol.min.css",
-        "https://cdn.statically.io/gh/everisEquipoGIS/incendio/main/managelayers.min.css"
       ]
     },
     "final": {
