@@ -1,5 +1,9 @@
 /* Activate */
 .m-control.m-container.m-plg_activate{
-	order: 11;
+	order: 12;
 }	
-	
+
+/* Identify */
+.m-control.m-getfeatureinfobylayers-container{
+	order: 11;
+}
