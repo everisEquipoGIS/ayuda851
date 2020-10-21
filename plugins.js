@@ -69,6 +69,19 @@ map.addPlugin(barraNavegacion);
 
 
 /**********************************************************
+ * PLUGIN NEGOCIO PANGEA
+ **********************************************************/
+
+var mp = new M.plugin.Plg_negocio_pangea({
+		proxyExceptions: ["https://servintegra.cma.junta-andalucia.es"],
+		urlWFSActivos: "https://servintegra.cma.junta-andalucia.es/medioambiente/mapwms/REDIAM_WFS_pangea?srsname=EPSG%3A25830&service=wfs&version=1.1.0&request=getFeature&typename=igbdp_geometria_bienes&outputformat=geojson",
+		urlCapaParcelas: "https://servintegra.cma.junta-andalucia.es/medioambiente/mapwms/REDIAM_WFS_pangea?srsname=EPSG%3A25830&service=wfs&version=1.1.0&request=getFeature&typename=igbdp_catastro_geometria&outputformat=geojson",
+		categoriaIconos: categoriaIconos
+	});
+	map.addPlugin(mp);
+
+
+/**********************************************************
  * PLUGIN TOC
  **********************************************************/
 var tocPlugin = new M.plugin.Toc({
@@ -111,20 +124,14 @@ tocPlugin.panel_.on(M.evt.ADDED_TO_MAP, () => {
 			});
 		};
 	}, 1000);
-	//mp.toc_override();
-});
-
-/*
-tocPlugin.panel_.once(M.evt.SHOW, () => {
-	mp.layerTocOverride(arcgis_layer);
-	gestionCluster();
+	mp.toc_override();
 });
 
 var idParam = new URL(window.location.href).searchParams.get("ids");
 if (idParam != null) {
 	mp.centrarMapa("N_INVENTARIO", idParam.split(",").filter(a => a != ""));
 }
-*/
+
 
 
 
