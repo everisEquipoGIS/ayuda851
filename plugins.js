@@ -138,7 +138,7 @@ tocPlugin.panel_.on(M.evt.ADDED_TO_MAP, () => {
 			});
 		};
 	}, 1000);
-	toc_override();
+	//toc_override();
 	//mp.toc_override();
 });
 /*
