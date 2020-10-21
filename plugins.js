@@ -69,16 +69,31 @@ map.addPlugin(barraNavegacion);
 
 
 /**********************************************************
- * PLUGIN NEGOCIO PANGEA
+ * UTILS TOC
  **********************************************************/
+toc_override() {
+    var map = this.map_;
+    var mapContainer = map.getContainer();
+    var button = mapContainer.querySelector('.m-areas .m-panel-btn.g-toc-closed');
+    "click touch".split(" ").forEach(function (ev) {
+      button.addEventListener(ev, function (e) {
+        if (e.target.classList.contains("g-toc-closed")) {
+          //Cerrando
+          mapContainer.parentElement.parentElement.style.width = "100%";
+          mapContainer.querySelector('.m-areas .m-toc-container').style.display = "none";
+        } else {
+          //Abierto
+          mapContainer.parentElement.parentElement.style.width = "calc(100% - 350px)";
+          mapContainer.querySelector('.m-areas .m-toc-container').style.display = "table";
+        }
+        window.dispatchEvent(new Event('resize'));
+      });
+    });
+ }
+ 
+ 
 
-var mp = new M.plugin.Plg_negocio_pangea({
-		proxyExceptions: ["https://servintegra.cma.junta-andalucia.es"],
-		urlWFSActivos: "https://servintegra.cma.junta-andalucia.es/medioambiente/mapwms/REDIAM_WFS_pangea?srsname=EPSG%3A25830&service=wfs&version=1.1.0&request=getFeature&typename=igbdp_geometria_bienes&outputformat=geojson",
-		urlCapaParcelas: "https://servintegra.cma.junta-andalucia.es/medioambiente/mapwms/REDIAM_WFS_pangea?srsname=EPSG%3A25830&service=wfs&version=1.1.0&request=getFeature&typename=igbdp_catastro_geometria&outputformat=geojson",
-		categoriaIconos: categoriaIconos
-	});
-	map.addPlugin(mp);
+
 
 
 /**********************************************************
@@ -124,13 +139,15 @@ tocPlugin.panel_.on(M.evt.ADDED_TO_MAP, () => {
 			});
 		};
 	}, 1000);
-	mp.toc_override();
+	toc_override();
+	//mp.toc_override();
 });
-
+/*
 var idParam = new URL(window.location.href).searchParams.get("ids");
 if (idParam != null) {
 	mp.centrarMapa("N_INVENTARIO", idParam.split(",").filter(a => a != ""));
 }
+*/
 
 
 
