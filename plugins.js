@@ -72,7 +72,6 @@ map.addPlugin(barraNavegacion);
  * UTILS TOC
  **********************************************************/
 function toc_override() {
-    var map = this.map_;
     var mapContainer = map.getContainer();
     var button = mapContainer.querySelector('.m-areas .m-panel-btn.g-toc-closed');
     "click touch".split(" ").forEach(function (ev) {
