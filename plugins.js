@@ -111,9 +111,10 @@ tocPlugin.panel_.on(M.evt.ADDED_TO_MAP, () => {
 			});
 		};
 	}, 1000);
-	mp.toc_override();
+	//mp.toc_override();
 });
 
+/*
 tocPlugin.panel_.once(M.evt.SHOW, () => {
 	mp.layerTocOverride(arcgis_layer);
 	gestionCluster();
@@ -123,6 +124,7 @@ var idParam = new URL(window.location.href).searchParams.get("ids");
 if (idParam != null) {
 	mp.centrarMapa("N_INVENTARIO", idParam.split(",").filter(a => a != ""));
 }
+*/
 
 
 
