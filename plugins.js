@@ -41,13 +41,15 @@ var comunicacionCatastro = new M.control.PLG_ActivateControl(
 /**********************************************************
  * PLUGIN PLG_HOR_NAVIGATION
  **********************************************************/
+var getfeatureinfocontrol = new M.control.getfeatureinfobylayersControl();
+
 
 const barraNavegacion = new M.plugin.PLG_Hor_Navigation({
     "measureLength": true,
     "measureArea": true,
     "geocalc": false,
     "identify": {
-      "all": true
+      "all": false
     },
     "catastroSearch": {
       "add": false,
@@ -62,7 +64,7 @@ const barraNavegacion = new M.plugin.PLG_Hor_Navigation({
     "coordinatesZoom": true,
     "addControls": {
       "add": true,
-      "controls": [comunicacionCatastro]
+      "controls": [comunicacionCatastro, getfeatureinfocontrol]
     }
   });
 map.addPlugin(barraNavegacion);
