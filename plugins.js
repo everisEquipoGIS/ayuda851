@@ -90,7 +90,8 @@ function toc_override() {
     });
  }
  
- 
+
+
 
 
 
@@ -117,36 +118,7 @@ var tocPlugin = new M.plugin.Toc({
 
 map.addPlugin(tocPlugin);
 
-tocPlugin.panel_.on(M.evt.ADDED_TO_MAP, () => {
-	setTimeout(() => {
-		// Se aumenta el método del control advls para añadir filtrado
-		// a capas con resolución máxima distinta a resolución máxima del mapa
-		M.control.advLSControl.prototype.enableLayersInRange = function (evt) {
-			var this_ = this;
-			var maxRes = Math.max(...map.getResolutions()); // añadido
-			this.map_.getLayers().filter(capa => { // filtro añadido
-				if (capa.getImpl != undefined && capa.getImpl().getMaxResolution != undefined) {
-					return capa.getImpl().getMaxResolution() !== maxRes;
-				}
-			}).filter(function (layer) {
-				const node = this_.getNodeFromLayer(layer); // elemento "div" del DOM
-				if (node) {
-					// inRange: la resolución del mapa está dentro de los límites de resolución de la capa
-					const activate = this_.inRange(layer) && this_.checkAncestorsVisibility(node);
-					this_.enableLayers(node, activate);
-				}
-			});
-		};
-	}, 1000);
-	//toc_override();
-	//mp.toc_override();
-});
-/*
-var idParam = new URL(window.location.href).searchParams.get("ids");
-if (idParam != null) {
-	mp.centrarMapa("N_INVENTARIO", idParam.split(",").filter(a => a != ""));
-}
-*/
+toc_override();
 
 
 
