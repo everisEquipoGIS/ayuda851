@@ -71,25 +71,7 @@ map.addPlugin(barraNavegacion);
 /**********************************************************
  * UTILS TOC
  **********************************************************/
-function toc_override() {
-    var mapContainer = map.getContainer();
-    var button = mapContainer.querySelector('.m-areas .m-panel-btn.g-toc-closed');
-    "click touch".split(" ").forEach(function (ev) {
-      button.addEventListener(ev, function (e) {
-        if (e.target.classList.contains("g-toc-closed")) {
-          //Cerrando
-          mapContainer.parentElement.parentElement.style.width = "100%";
-          mapContainer.querySelector('.m-areas .m-toc-container').style.display = "none";
-        } else {
-          //Abierto
-          mapContainer.parentElement.parentElement.style.width = "calc(100% - 350px)";
-          mapContainer.querySelector('.m-areas .m-toc-container').style.display = "table";
-        }
-        window.dispatchEvent(new Event('resize'));
-      });
-    });
- }
- 
+
 
 
 
