@@ -36,13 +36,11 @@ var comunicacionCatastro = new M.control.PLG_ActivateControl(
 		}
 );
 
-
-
 /**********************************************************
  * PLUGIN PLG_HOR_NAVIGATION
  **********************************************************/
+/* plg identify */
 var getfeatureinfocontrol = new M.control.getfeatureinfobylayersControl();
-
 
 const barraNavegacion = new M.plugin.PLG_Hor_Navigation({
     "measureLength": true,
@@ -68,6 +66,63 @@ const barraNavegacion = new M.plugin.PLG_Hor_Navigation({
     }
   });
 map.addPlugin(barraNavegacion);
+
+
+/**********************************************************
+ * PLUGIN TOC
+ **********************************************************/
+var tocPlugin = new M.plugin.Toc({
+	connector: null,
+	advLS: {
+		apiRestUrl: null,
+		user: null,
+		config: arbolCapasUrl,
+		wmsLayers: predefServersArray,
+		enableTOCFile: true,
+		enableCatalog: true
+	},
+	config: {
+		position: M.ui.position.BL,
+		opened: false,
+		width: "SMALL"
+	}
+});
+
+map.addPlugin(tocPlugin);
+
+tocPlugin.panel_.on(M.evt.ADDED_TO_MAP, () => {
+	setTimeout(() => {
+		// Se aumenta el método del control advls para añadir filtrado
+		// a capas con resolución máxima distinta a resolución máxima del mapa
+		M.control.advLSControl.prototype.enableLayersInRange = function (evt) {
+			var this_ = this;
+			var maxRes = Math.max(...map.getResolutions()); // añadido
+			this.map_.getLayers().filter(capa => { // filtro añadido
+				if (capa.getImpl != undefined && capa.getImpl().getMaxResolution != undefined) {
+					return capa.getImpl().getMaxResolution() !== maxRes;
+				}
+			}).filter(function (layer) {
+				const node = this_.getNodeFromLayer(layer); // elemento "div" del DOM
+				if (node) {
+					// inRange: la resolución del mapa está dentro de los límites de resolución de la capa
+					const activate = this_.inRange(layer) && this_.checkAncestorsVisibility(node);
+					this_.enableLayers(node, activate);
+				}
+			});
+		};
+	}, 1000);
+	mp.toc_override();
+});
+
+tocPlugin.panel_.once(M.evt.SHOW, () => {
+	mp.layerTocOverride(arcgis_layer);
+	gestionCluster();
+});
+
+var idParam = new URL(window.location.href).searchParams.get("ids");
+if (idParam != null) {
+	mp.centrarMapa("N_INVENTARIO", idParam.split(",").filter(a => a != ""));
+}
 
 
 
