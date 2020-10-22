@@ -3,20 +3,8 @@
   "controls": ["mouse"],
   "projection": "EPSG:25829*m",
   "zoom": 2,
-  "wmcfiles": ["https://www.juntadeandalucia.es/medioambiente/servtc5/ventana/documentos/incendios/server/mapa_base.xml"],
+  "wmcfiles": [],
   "constructionLayers": [
-    {
-      "layerType": "wms",
-      "url": "https://www.callejerodeandalucia.es/servicios/base/wms?",
-      "name": "batimetria",
-      "legend": "Batimetría"
-    },
-    {
-      "layerType": "wms",
-      "url": "https://www.callejerodeandalucia.es/servicios/base/wms?",
-      "name": "contexto_andalucia",
-      "legend": "Contexto"
-    }
   ],
   "layers": [
   ],
