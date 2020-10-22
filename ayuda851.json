@@ -5,6 +5,18 @@
   "zoom": 2,
   "wmcfiles": [],
   "constructionLayers": [
+	{
+      "layerType": "wms",
+      "url": "https://www.callejerodeandalucia.es/servicios/base/wms?",
+      "name": "batimetria",
+      "legend": "Batimetría"
+    },
+    {
+      "layerType": "wms",
+      "url": "https://www.callejerodeandalucia.es/servicios/base/wms?",
+      "name": "contexto_andalucia",
+      "legend": "Contexto"
+    }
   ],
   "layers": [
   ],
