@@ -155,56 +155,7 @@ var tocPlugin = new M.plugin.Toc({
 	advLS: {
 		apiRestUrl: null,
 		user: null,
-		config: {"layersTree": {
-				"id": "root",
-				"label": "Ayuda 831",
-				"type": "folder",
-				"isOpenOnStartUp": true,
-				"active": true,
-				"children": [
-					{
-						"id": "limites_administrativos",
-						"type": "folder",
-						"label": "Base",
-						"isOpenOnStartUp": true,
-						"active": true,
-						"baselayer": true,
-						"opacity": 1,
-						"children": [
-						{
-								"label": "Provincias",
-								"type": "layer",
-								"layer": "provincias",
-								"visibility": true,
-								"active": true,
-								"baselayer": false,
-								"minScale": null,
-								"maxScale": 275000,
-								"opacity": 1,
-								"format": "text/html",
-								"mandatory": false,
-								"exclusive": false,
-								"identify": true
-							},
-							{
-								"label": "Términos Municipales",
-								"type": "layer",
-								"layer": "g13_01_TerminoMunicipal",
-								"visibility": true,
-								"active": true,
-								"baselayer": false,
-								"minScale": null,
-								"maxScale": 275000,
-								"opacity": 1,
-								"format": "text/html",
-								"mandatory": false,
-								"exclusive": false,
-								"identify": true
-							}
-						]					
-					}
-				]
-	}},
+		config: "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/47f395a/layersTree.json",
 		wmsLayers: predefServersArray,
 		enableTOCFile: true,
 		enableCatalog: true
