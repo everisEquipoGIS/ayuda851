@@ -20,16 +20,18 @@
   ],
   "layers": [
 			{
+				"layerType": "wms",
 				"id": "provincias",
 				"name": "provincias",
-				"wms": "http://www.ideandalucia.es/wms/dea100_divisiones_administrativas?",
+				"url": "http://www.ideandalucia.es/wms/dea100_divisiones_administrativas?",
 				"tiled": true,
 				"zindex": 1000
 			},
 			{
+				"layerType": "wms",
 				"id": "g13_01_TerminoMunicipal",
 				"name": "g13_01_TerminoMunicipal",				
-				"wms":"https://www.ideandalucia.es/services/DERA_g13_limites_administrativos/wms?", 
+				"url":"https://www.ideandalucia.es/services/DERA_g13_limites_administrativos/wms?", 
 				"tiled": true,
 				"zindex": 1001
 			}
