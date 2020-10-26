@@ -6,6 +6,20 @@
   "wmcfiles": ["https://www.juntadeandalucia.es/medioambiente/servtc5/ventana/documentos/incendios/server/mapa_base.xml"],
   "constructionLayers": [
 			{
+			  "layerType": "wms",
+			  "url": "https://www.callejerodeandalucia.es/servicios/base/wms?",
+			  "name": "batimetria",
+			  "legend": "Batimetría"
+			},
+			{
+			  "layerType": "wms",
+			  "url": "https://www.callejerodeandalucia.es/servicios/base/wms?",
+			  "name": "contexto_andalucia",
+			  "legend": "Contexto"
+			}
+  ],
+  "layers": [	
+			{
 				"layerType": "wms",
 				"id": "provincias",
 				"name": "provincias",
@@ -20,20 +34,7 @@
 				"legend": "Términos municipales",
 				"url":"https://www.ideandalucia.es/services/DERA_g13_limites_administrativos/wms?", 
 				"tiled": true
-			},{
-			  "layerType": "wms",
-			  "url": "https://www.callejerodeandalucia.es/servicios/base/wms?",
-			  "name": "batimetria",
-			  "legend": "Batimetría"
-			},
-			{
-			  "layerType": "wms",
-			  "url": "https://www.callejerodeandalucia.es/servicios/base/wms?",
-			  "name": "contexto_andalucia",
-			  "legend": "Contexto"
 			}
-  ],
-  "layers": [			
   ],
   "scripts": {
     "inicio": {
