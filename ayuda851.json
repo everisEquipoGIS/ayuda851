@@ -26,7 +26,7 @@
 				"legend": "Provincias",
 				"url": "http://www.ideandalucia.es/wms/dea100_divisiones_administrativas?",
 				"tiled": true,
-				"zindex": 1000
+				"zindex": 3
 			},
 			{
 				"layerType": "wms",
@@ -35,7 +35,7 @@
 				"legend": "Términos municipales",
 				"url":"https://www.ideandalucia.es/services/DERA_g13_limites_administrativos/wms?", 
 				"tiled": true,
-				"zindex": 1001
+				"zindex": 4
 			}
   ],
   "scripts": {
