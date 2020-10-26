@@ -20,3 +20,8 @@
 #toolbar-managelayers>div.title{
 	background-color: #007a33!important;
 }
+
+.m-areas>div.m-area>div.m-panel.m-managelayers.collapsed>button.m-panel-btn{
+	color: #007a33!important;
+    background-color: white!important;	
+}
