@@ -11,8 +11,7 @@
 				"name": "provincias",
 				"legend": "Provincias",
 				"url": "http://www.ideandalucia.es/wms/dea100_divisiones_administrativas?",
-				"tiled": true,
-				"zindex": 3
+				"tiled": true
 			},
 			{
 				"layerType": "wms",
@@ -20,8 +19,7 @@
 				"name": "g13_01_TerminoMunicipal",	
 				"legend": "Términos municipales",
 				"url":"https://www.ideandalucia.es/services/DERA_g13_limites_administrativos/wms?", 
-				"tiled": true,
-				"zindex": 4
+				"tiled": true
 			},{
 			  "layerType": "wms",
 			  "url": "https://www.callejerodeandalucia.es/servicios/base/wms?",
