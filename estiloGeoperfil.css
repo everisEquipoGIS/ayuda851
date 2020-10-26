@@ -1,14 +1,22 @@
-/* Activate */
+/****************************************************************
+* ACTIVATE
+*****************************************************************/
 .m-control.m-container.m-plg_activate{
 	order: 12;
 }	
 
-/* Identify */
+/****************************************************************
+* IDENTIFY
+*****************************************************************/
 .m-control.m-getfeatureinfobylayers-container{
 	order: 11;
 }
 
-/* Manage Layers */
+/****************************************************************
+* MANAGE LAYERS
+*****************************************************************/
+
+/* Estilo toc */
 #toolbar-buttons-managelayers{
 	background-color: #007a33!important;
 }	
@@ -24,4 +32,11 @@
 .m-areas>div.m-area>div.m-panel.m-managelayers.collapsed>button.m-panel-btn{
 	color: #007a33!important;
     background-color: white!important;	
+}
+
+/* Eliminar capa plg catastro */
+#toc-activelayers div[id*='layerThatContainSelectedFeatures'].toc-item-layer,
+#toc-activelayers div[id*='layerChangingColorWhenHovering'].toc-item-layer,
+#toc-activelayers div[id$='_'].toc-item-layer {
+    display: none;
 }
