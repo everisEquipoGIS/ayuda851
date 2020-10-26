@@ -7,3 +7,16 @@
 .m-control.m-getfeatureinfobylayers-container{
 	order: 11;
 }
+
+/* Manage Layers */
+#toolbar-buttons-managelayers{
+	background-color: #007a33!important;
+}	
+
+.m-areas>div.m-area>div.m-panel.m-managelayers>button.m-panel-btn{
+	background-color: #007a33!important;
+}
+
+#toolbar-managelayers>div.title{
+	background-color: #007a33!important;
+}
