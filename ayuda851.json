@@ -47,18 +47,9 @@
 			{
 			  "layerType": "geojson",
 			  "layer": {
-				"name": "TextoProvincias",
+				"name": "ProvinciasTextos",
 				"url": "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/capas/ProvinciasTextos.geojson",
 				"extract": false
-			  },
-			  "style": {
-				"type": "Polygon",
-				"options": {
-				  "stroke": {
-					"color": "#000000",
-					"width": 4
-				  }
-				}
 			  }
 			}
   ],
