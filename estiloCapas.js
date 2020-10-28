@@ -29,3 +29,7 @@ const estiloTextoProvincia = new M.style.Point({
 
 
 textoProvincias.setStyle(estiloTextoProvincia);
+
+
+/* Estableces escala minima a capa ProvinciaTexto */
+textoProvincias.setMinScale(150000);
