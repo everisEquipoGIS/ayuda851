@@ -43,6 +43,23 @@
 				  }
 				}
 			  }
+			},
+			{
+			  "layerType": "geojson",
+			  "layer": {
+				"name": "TextoProvincias",
+				"url": "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/capas/ProvinciasTextos.geojson",
+				"extract": false
+			  },
+			  "style": {
+				"type": "Polygon",
+				"options": {
+				  "stroke": {
+					"color": "#000000",
+					"width": 4
+				  }
+				}
+			  }
 			}
   ],
   "scripts": {
@@ -55,7 +72,8 @@
     },
     "final": {
       "js": [
-        "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/5d79a36/plugins.js"
+        "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/5d79a36/plugins.js",
+		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/7d31b92/estiloCapas.js"
       ],
       "css": []
     }
