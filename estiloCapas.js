@@ -1,7 +1,7 @@
 const capas = map.getLayers();
 const textoProvincias = capas.find(capa => capa.name === "ProvinciasTextos");
 
-console.log("Entra estilos capas");
+console.log("Entra estilos capas 2");
 
 const estiloTextoProvincia = new M.style.Point({
 	label: {
