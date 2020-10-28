@@ -31,7 +31,7 @@
 			  "layerType": "geojson",
 			  "layer": {
 				"name": "Provincias",
-				"url": "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/capas/Provincias.geojson",
+				"url": "https://www.cma.junta-andalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Ayuda_831/IG/Provincias.geojson",
 				"extract": false
 			  },
 			  "style": {
@@ -48,7 +48,7 @@
 			  "layerType": "geojson",
 			  "layer": {
 				"name": "ProvinciasTextos",
-				"url": "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/capas/ProvinciasTextos.geojson",
+				"url": "https://www.cma.junta-andalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Ayuda_831/IG/ProvinciasTextos.geojson",
 				"extract": false
 			  }
 			}
@@ -58,13 +58,13 @@
       "js": [
       ],
       "css": [
-		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/3f1b15e/estiloGeoperfil.css"
+		"https://www.cma.junta-andalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Ayuda_831/CSS/estiloGeoperfil.css"
       ]
     },
     "final": {
       "js": [	  
-		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/2471a44/estiloCapas.js",
-        "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/5d79a36/plugins.js"
+		"https://www.cma.junta-andalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Ayuda_831/JS/estiloCapas.js",
+        "https://www.cma.junta-andalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Ayuda_831/JS/plugins.js"
       ],
       "css": []
     }
