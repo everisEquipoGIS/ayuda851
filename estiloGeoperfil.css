@@ -54,3 +54,10 @@
 #toc-activelayers div[id$='_'].toc-item-layer {
     display: none;
 }
+
+/* Elimenar capa textoProvincia */
+#toc-activelayers div[id*='ProvinciasTextos'].toc-item-layer,
+#toc-activelayers div[id*='layerChangingColorWhenHovering'].toc-item-layer,
+#toc-activelayers div[id$='_'].toc-item-layer {
+    display: none;
+}
