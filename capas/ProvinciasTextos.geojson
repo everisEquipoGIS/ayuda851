@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "ProvinciasTextos",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::25830" } },
+"features": [
+{ "type": "Feature", "properties": { "PROVINCIA": "Almería", "COD_PROV": "04", "COD_ENT": "d07" }, "geometry": { "type": "Point", "coordinates": [ 558044.017580131650902, 4116759.583969836588949 ] } },
+{ "type": "Feature", "properties": { "PROVINCIA": "Cádiz", "COD_PROV": "11", "COD_ENT": "d07" }, "geometry": { "type": "Point", "coordinates": [ 252917.740948931081221, 4048886.338739332742989 ] } },
+{ "type": "Feature", "properties": { "PROVINCIA": "Córdoba", "COD_PROV": "14", "COD_ENT": "d07" }, "geometry": { "type": "Point", "coordinates": [ 341261.294400063634384, 4206420.248667273670435 ] } },
+{ "type": "Feature", "properties": { "PROVINCIA": "Granada", "COD_PROV": "18", "COD_ENT": "d07" }, "geometry": { "type": "Point", "coordinates": [ 476009.825222318992019, 4129552.961595942266285 ] } },
+{ "type": "Feature", "properties": { "PROVINCIA": "Huelva", "COD_PROV": "21", "COD_ENT": "d07" }, "geometry": { "type": "Point", "coordinates": [ 161796.102263300766936, 4165720.87333324411884 ] } },
+{ "type": "Feature", "properties": { "PROVINCIA": "Jaén", "COD_PROV": "23", "COD_ENT": "d07" }, "geometry": { "type": "Point", "coordinates": [ 461131.567970725765917, 4207741.644602820277214 ] } },
+{ "type": "Feature", "properties": { "PROVINCIA": "Málaga", "COD_PROV": "29", "COD_ENT": "d07" }, "geometry": { "type": "Point", "coordinates": [ 345973.843715888797306, 4075624.04691554652527 ] } },
+{ "type": "Feature", "properties": { "PROVINCIA": "Sevilla", "COD_PROV": "41", "COD_ENT": "d07" }, "geometry": { "type": "Point", "coordinates": [ 262646.929344134463463, 4146527.642483360599726 ] } }
+]
+}
