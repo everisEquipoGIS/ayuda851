@@ -50,7 +50,8 @@
 				"name": "ProvinciasTextos",
 				"url": "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/capas/ProvinciasTextos.geojson",
 				"extract": false
-			  }
+			  },
+			  "minScale": 150000
 			}
   ],
   "scripts": {
