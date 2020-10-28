@@ -32,4 +32,4 @@ textoProvincias.setStyle(estiloTextoProvincia);
 
 
 /* Estableces escala minima a capa ProvinciaTexto */
-textoProvincias.getImpl().getOL3Layer().setMinResolution(10);
+textoProvincias.getImpl().getOL3Layer().setMinResolution(25);
