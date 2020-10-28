@@ -63,7 +63,7 @@
     },
     "final": {
       "js": [	  
-		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/abfed56/estiloCapas.js",
+		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/2471a44/estiloCapas.js",
         "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/5d79a36/plugins.js"
       ],
       "css": []
