@@ -1,6 +1,7 @@
 const capas = map.getLayers();
 const textoProvincias = capas.find(capa => capa.name === "ProvinciasTextos");
 
+console.log("Entra estilos capas");
 
 const estiloTextoProvincia = new M.style.Point(
 	fill: {  
@@ -9,7 +10,5 @@ const estiloTextoProvincia = new M.style.Point(
     }
 	
 );
-
-
 
 textoProvincias.setStyle(estiloTextoProvincia);
