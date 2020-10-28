@@ -1,11 +1,11 @@
 const capas = map.getLayers();
 const textoProvincias = capas.find(capa => capa.name === "ProvinciasTextos");
 
-console.log("Entra estilos capas 2");
+console.log("Entra estilos capas 3");
 
 const estiloTextoProvincia = new M.style.Point({
 	label: {
-		text: 'PROVINCIA', // Texto etiqueta. fijo|función|atributo
+		text: {{PROVINCIA}}, // Texto etiqueta. fijo|función|atributo
 		font: 'bold 16px Courier New', // Fuente de la etiqueta
 		scale: 0.9, // Escala de la etiqueta
 		offset: [10, 0], // Desplazamiento en píxeles
