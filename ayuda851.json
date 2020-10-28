@@ -49,8 +49,7 @@
 			  "layer": {
 				"name": "ProvinciasTextos",
 				"url": "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/capas/ProvinciasTextos.geojson",
-				"extract": false,				
-				"minScale": 150.000
+				"extract": false
 			  }
 			}
   ],
@@ -59,12 +58,12 @@
       "js": [
       ],
       "css": [
-		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/f41d206/estiloGeoperfil.css"
+		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/3f1b15e/estiloGeoperfil.css"
       ]
     },
     "final": {
       "js": [	  
-		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/49ea8fe/estiloCapas.js",
+		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/1f64209/estiloCapas.js",
         "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/5d79a36/plugins.js"
       ],
       "css": []
