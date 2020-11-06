@@ -108,7 +108,7 @@ map.addPlugin(manageLayers);
 /**********************************************************
  * PLUGIN CONSULTA SIGPAC
  **********************************************************/
- const consultaSigpac = new PLG_consulta_sigpac({
+ const consultaSigpac = new M.plugin.PLG_consulta_sigpac({
   config: {
     municipio_filtro_url: "http://ws128.juntadeandalucia.es/agriculturaypesca/geoserver29/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=dgpa_spa_sigpac_2020:SPAD_MUNICIPIOS_ACTUAL&propertyName=DS_MUNICIPIO&sortBy=DS_MUNICIPIO&outputFormat=json&CQL_FILTER=CD_PROVINCIA=",
     poligono_filtro_url: "http://ws128.juntadeandalucia.es/agriculturaypesca/geoserver29/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=dgpa_spa_sigpac_2020:SPAD_POLIGONOS_ACTUAL&propertyName=CD_POLIGONO&sortBy=CD_POLIGONO&outputFormat=json&CQL_FILTER=CD_PROVINCIA=",
