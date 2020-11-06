@@ -105,7 +105,33 @@ const manageLayers = new M.plugin.ManageLayers(paramsPlugin);
 map.addPlugin(manageLayers);
 
 	
+/**********************************************************
+ * PLUGIN CONSULTA SIGPAC
+ **********************************************************/
+ const consultaSigpac = new PLG_consulta_sigpac({
+  config: {
+    municipio_filtro_url: "http://ws128.juntadeandalucia.es/agriculturaypesca/geoserver29/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=dgpa_spa_sigpac_2020:SPAD_MUNICIPIOS_ACTUAL&propertyName=DS_MUNICIPIO&sortBy=DS_MUNICIPIO&outputFormat=json&CQL_FILTER=CD_PROVINCIA=",
+    poligono_filtro_url: "http://ws128.juntadeandalucia.es/agriculturaypesca/geoserver29/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=dgpa_spa_sigpac_2020:SPAD_POLIGONOS_ACTUAL&propertyName=CD_POLIGONO&sortBy=CD_POLIGONO&outputFormat=json&CQL_FILTER=CD_PROVINCIA=",
+    parcela_filtro_url: "http://ws128.juntadeandalucia.es/agriculturaypesca/geoserver29/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=dgpa_spa_sigpac_2020:SPAD_PARCELAS_ACTUAL&propertyName=CD_PARCELA&sortBy=CD_PARCELA&outputFormat=json&CQL_FILTER=CD_PROVINCIA=",
+    recinto_filtro_url: "http://ws128.juntadeandalucia.es/agriculturaypesca/geoserver29/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=dgpa_spa_sigpac_2020:SPAD_RECINTOS_ACTUAL&propertyName=CD_RECINTO&sortBy=CD_RECINTO&outputFormat=json&CQL_FILTER=CD_PROVINCIA=",
+    provincia_geometria_url: "http://ws128.juntadeandalucia.es/agriculturaypesca/geoserver29/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=dgpa_spa_sigpac_2020:SPAD_PROVINCIAS_ACTUAL&outputFormat=json&CQL_FILTER=CD_PROVINCIA=",
+    municipio_geometria_url: "http://ws128.juntadeandalucia.es/agriculturaypesca/geoserver29/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=dgpa_spa_sigpac_2020:SPAD_MUNICIPIOS_ACTUAL&outputFormat=json&CQL_FILTER=CD_PROVINCIA=",
+    filtro_municipio: "%20AND%20CD_MUNICIPIO=",
+    poligono_geometria_url: "http://ws128.juntadeandalucia.es/agriculturaypesca/geoserver29/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=dgpa_spa_sigpac_2020:SPAD_POLIGONOS_ACTUAL&outputFormat=json&CQL_FILTER=CD_PROVINCIA=",
+    filtro_poligono: "%20AND%20CD_POLIGONO=",
+    parcela_geometria_url: "http://ws128.juntadeandalucia.es/agriculturaypesca/geoserver29/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=dgpa_spa_sigpac_2020:SPAD_PARCELAS_ACTUAL&outputFormat=json&CQL_FILTER=CD_PROVINCIA=",
+    filtro_parcela: "%20AND%20CD_PARCELA=",
+    recinto_geometria_url: "http://ws128.juntadeandalucia.es/agriculturaypesca/geoserver29/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=dgpa_spa_sigpac_2020:SPAD_RECINTOS_ACTUAL&outputFormat=json&CQL_FILTER=CD_PROVINCIA=",
+    filtro_recinto: "%20AND%20CD_RECINTO=",
+    sigpacWMS: {
+      wms_url: "https://ws128.juntadeandalucia.es/agriculturaypesca/geocachesig/service/wms?",
+      name: "dgpa_spa_sigpac_2020:SPAD_RECINTOS_ACTUAL_GWC"
+    },
+    descargaGMLrecinto: "http://ws128.juntadeandalucia.es/agriculturaypesca/geoserver29/wfs?service=wfs&version=2.0.0&request=GetFeature&typeNames=dgpa_spa_sigpac_2020:SPAD_RECINTOS_ACTUAL&CQL_FILTER=CD_PROVINCIA=",
+  }
+});
 
+map.addPlugin(consultaSigpac);
 
 
 
