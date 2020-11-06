@@ -51,6 +51,46 @@
 				"url": "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/capas/ProvinciasTextos.geojson",
 				"extract": false
 			  }
+			},
+			{
+				"layerType": "wms",
+				"name": "Ayuda_operacion_831",
+				"legend": "Ayuda Operación 831",
+				"url": "https://www.juntadeandalucia.es//medioambiente/mapwms/REDIAM_informacion_ref_ayuda_831?",
+				"tiled": true,
+				"zindex": 2400
+			},
+			{
+				"layerType": "wms",
+				"name": "Fraccion_cabida_cubierta_arbustiva",
+				"legend": "Fracción de Cabida de Cubierta Arbustiva",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_capas_apoyo_ayuda_831?",
+				"tiled": true,
+				"zindex": 2400
+			},
+			{
+				"layerType": "wms",
+				"name": "eennpp",
+				"legend": "Espacios Naturales Protegidos (EENNPP)",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_capas_apoyo_ayuda_831?",
+				"tiled": true,
+				"zindex": 2400
+			},
+			{
+				"layerType": "wms",
+				"name": "areas_protegidas_intern",
+				"legend": "Áreas protegidas por instrumentos internacionales",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_capas_apoyo_ayuda_831?",
+				"tiled": true,
+				"zindex": 2400
+			},
+			{
+				"layerType": "wms",
+				"name": "red_natura_2000",
+				"legend": "Red Natura 2000",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_capas_apoyo_ayuda_831?",
+				"tiled": true,
+				"zindex": 2400
 			}
   ],
   "scripts": {
