@@ -58,8 +58,7 @@
 				"legend": "Ayuda Operación 831",
 				"url": "https://www.juntadeandalucia.es//medioambiente/mapwms/REDIAM_informacion_ref_ayuda_831?",
 				"tiled": true,
-				"zindex": 2400,
-				"maxScale": 40000
+				"zindex": 2400
 			},
 			{
 				"layerType": "wms",
@@ -104,7 +103,7 @@
     },
     "final": {
       "js": [	  
-		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/e605323/estiloCapas.js",
+		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/72aebfc/estiloCapas.js",
         "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/3abfb69/plugins.js"
       ],
       "css": []
