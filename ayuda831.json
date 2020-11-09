@@ -58,8 +58,7 @@
 				"legend": "Ayuda Operación 831",
 				"url": "https://www.juntadeandalucia.es//medioambiente/mapwms/REDIAM_informacion_ref_ayuda_831?",
 				"tiled": true,
-				"zindex": 2400,
-				"visibility": false
+				"zindex": 2400
 			},
 			{
 				"layerType": "wms",
@@ -75,7 +74,8 @@
 				"legend": "Espacios Naturales Protegidos (EENNPP)",
 				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_capas_apoyo_ayuda_831?",
 				"tiled": true,
-				"zindex": 2400
+				"zindex": 2400,				
+				"visibility": false
 			},
 			{
 				"layerType": "wms",
@@ -83,7 +83,8 @@
 				"legend": "Áreas protegidas por instrumentos internacionales",
 				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_capas_apoyo_ayuda_831?",
 				"tiled": true,
-				"zindex": 2400
+				"zindex": 2400,				
+				"visibility": false
 			},
 			{
 				"layerType": "wms",
@@ -91,7 +92,8 @@
 				"legend": "Red Natura 2000",
 				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_capas_apoyo_ayuda_831?",
 				"tiled": true,
-				"zindex": 2400
+				"zindex": 2400,				
+				"visibility": false
 			}
   ],
   "scripts": {
