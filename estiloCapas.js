@@ -1,6 +1,7 @@
 const capas = map.getLayers();
 const textoProvincias = capas.find(capa => capa.name === "ProvinciasTextos");
 const ayudaOperacion831 = capas.find(capa => capa.name === "Ayuda_operacion_831");
+const capaFCC = capas.find(capa => capa.name === "Fraccion_cabida_cubierta_arbustiva");
 
 
 const estiloTextoProvincia = new M.style.Point({
@@ -36,5 +37,8 @@ textoProvincias.setStyle(estiloTextoProvincia);
 /* Estableces escala minima a capa ProvinciaTexto */
 textoProvincias.getImpl().getOL3Layer().setMinResolution(35);
 
-/* Estableces escala a capa AyudaO peracion 831 */
+/* Estableces escala a capa Ayuda peracion 831 */
 ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(30);
+
+/* Estableces escala a capa FCC */
+capaFCC.getImpl().getOL3Layer().setMaxResolution(25);
