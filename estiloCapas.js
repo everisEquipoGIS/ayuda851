@@ -1,5 +1,7 @@
 const capas = map.getLayers();
 const textoProvincias = capas.find(capa => capa.name === "ProvinciasTextos");
+const ayudaOperacion831 = capas.find(capa => capa.name === "Ayuda_operacion_831");
+
 
 const estiloTextoProvincia = new M.style.Point({
 	label: {
@@ -33,3 +35,6 @@ textoProvincias.setStyle(estiloTextoProvincia);
 
 /* Estableces escala minima a capa ProvinciaTexto */
 textoProvincias.getImpl().getOL3Layer().setMinResolution(35);
+
+/* Estableces escala a capa AyudaO peracion 831 */
+ayudaOperacion831.getImpl().getOL3Layer().setMinResolution(45);
