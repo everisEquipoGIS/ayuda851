@@ -41,4 +41,4 @@ textoProvincias.getImpl().getOL3Layer().setMinResolution(35);
 ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(30);
 
 /* Estableces escala a capa FCC */
-capaFCC.getImpl().getOL3Layer().setMaxResolution(25);
+capaFCC.getImpl().getOL3Layer().setMaxResolution(20);
