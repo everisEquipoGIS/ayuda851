@@ -59,7 +59,7 @@
 				"url": "https://www.juntadeandalucia.es//medioambiente/mapwms/REDIAM_informacion_ref_ayuda_831?",
 				"tiled": true,
 				"zindex": 2400,
-				"active": false
+				"visibility": false
 			},
 			{
 				"layerType": "wms",
@@ -104,7 +104,7 @@
     },
     "final": {
       "js": [	  
-		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/78a0af1/estiloCapas.js",
+		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/43d46d9/estiloCapas.js",
         "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/3abfb69/plugins.js"
       ],
       "css": []
