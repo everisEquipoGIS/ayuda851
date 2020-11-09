@@ -37,4 +37,4 @@ textoProvincias.setStyle(estiloTextoProvincia);
 textoProvincias.getImpl().getOL3Layer().setMinResolution(35);
 
 /* Estableces escala a capa AyudaO peracion 831 */
-ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(40);
+ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(35);
