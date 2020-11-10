@@ -38,7 +38,7 @@ textoProvincias.setStyle(estiloTextoProvincia);
 textoProvincias.getImpl().getOL3Layer().setMinResolution(35);
 
 /* Estableces escala a capa Ayuda peracion 831 */
-ayudaOperacion831..on(M.evt.LOAD, function(features) {
+ayudaOperacion831.on(M.evt.LOAD, function(features) {
 	ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(30);
 }
 
