@@ -40,16 +40,15 @@ textoProvincias.getImpl().getOL3Layer().setMinResolution(35);
 /* Estableces escala a capa Ayuda peracion 831 */
 ayudaOperacion831.on(M.evt.LOAD, function(features) {
 	ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(30);
-}
+};
 
 /* Estableces escala a capa FCC */
 capaFCC.getImpl().getOL3Layer().setMaxResolution(20);
 
 
 /* Cambiar color boton comunicacion catastro */
-/*var botonComuCatastro = document.getElementById("plg_comunicacion_catastro");
+var botonComuCatastro = document.getElementById("plg_comunicacion_catastro");
 botonComuCatastro.click((e) => {
 	console.log("HOLAAA");
 	console.log(e);
 });	
-*/
