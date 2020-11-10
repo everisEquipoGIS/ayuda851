@@ -73,3 +73,11 @@ div[data-id*='TerminoMunicipal'] .legend {
     background-position: left bottom;
     height: 70px;
 }
+
+
+/* Estilo popup */
+.m-popup{
+	background-color: white!important;
+    width: max-content!important;
+    max-width: 400px!important;
+}	
