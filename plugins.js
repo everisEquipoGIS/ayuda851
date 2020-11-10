@@ -37,14 +37,6 @@ var comunicacionCatastro = new M.control.PLG_ActivateControl(
 );
 
 
-comunicacionCatastro.on(M.evt.ACTIVATED, function () {
-  comunicacionCatastro.element_.firstElementChild.style.filter = "none";
-});
-comunicacionCatastro.on(M.evt.DEACTIVATED, function () {
-  comunicacionCatastro.element_.firstElementChild.style.filter = null;
-});
-
-
 /**********************************************************
  * PLUGIN CONSULTA SIGPAC CON ACTIVATE 
  **********************************************************/
