@@ -60,12 +60,12 @@
 }
 
 /* Eliminar capa plg sigpac */
-/*#toc-activelayers div[id*='layerThatContainSelectedFeaturesSigpac'].toc-item-layer,
+#toc-activelayers div[id*='layerThatContainSelectedFeaturesSigpac'].toc-item-layer,
 #toc-activelayers div[id*='layerChangingColorWhenHoveringSigpac'].toc-item-layer,
 #toc-activelayers div[id*='layerResaltoBusqueda'].toc-item-layer,
 #toc-activelayers div[id$='_'].toc-item-layer {
     display: none;
-}*/
+}
 
 /* Cambiar leyenda terminos municipales */
 div[data-id*='TerminoMunicipal'] .legend img {
