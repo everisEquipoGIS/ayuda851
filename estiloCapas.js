@@ -50,7 +50,7 @@ ayudaOperacion831.on(M.evt.LOAD, function(features) {
 
 
 // Botones comunicacion catastro y sigpac
-setTimeout(
+setTimeout(function(){
 var botonComuCatastro = document.getElementById("plg_comunicacion_catastro");
 var botonConsultaSigpac = document.getElementById("plg_consulta_sigpac");
 var botonConsultaSigpacImg = botonConsultaSigpac.getElementsByTagName("img");
@@ -86,4 +86,4 @@ botonConsultaSigpac.addEventListener("click", function( event ) {
 		}
 	}	
 }, false);
-, 3000);
+ }, 3000);
