@@ -48,10 +48,13 @@ capaFCC.getImpl().getOL3Layer().setMaxResolution(20);
 
 /* Cambiar color boton comunicacion catastro */
 var botonComuCatastro = document.getElementById("plg_comunicacion_catastro");
+// Incialmente poner en gris el boton
 botonComuCatastro.classList.add("desactivar_comunicacion_catastro");
 
 botonComuCatastro.click((e) => {
-	if(!botonComuCatastro.classList.contains("desactivar_comunicacion_catastro")){
+	if(botonComuCatastro.classList.contains("desactivar_comunicacion_catastro")){
+		botonComuCatastro.classList.remove("desactivar_comunicacion_catastro");
+	} else {
 		botonComuCatastro.classList.add("desactivar_comunicacion_catastro");
 	}	
 });	
