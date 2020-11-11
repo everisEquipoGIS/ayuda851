@@ -61,3 +61,19 @@ botonComuCatastro.addEventListener("click", function( event ) {
 		botonComuCatastro.classList.add("desactivar_comunicacion_catastro");
 	}	
 }, false);	
+
+/* Cambiar color boton consulta sigpac */
+var botonConsultaSigpac = document.getElementById("plg_consulta_sigpac");
+var botonConsultaSigpacImg = botonConsultaSigpac.getElementsByTagName("img");
+
+botonConsultaSigpac.addEventListener("click", function( event ) {	
+	if(botonConsultaSigpac.classList.contains("activar_consulta_sigpac") 
+		&& botonConsultaSigpacImg[0].classList.contains("activar_consulta_sigpac_img")){
+			
+			botonConsultaSigpac.classList.remove("activar_consulta_sigpac");
+			botonConsultaSigpacImg[0].classList.remove("activar_consulta_sigpac_img");
+	} else {
+		botonConsultaSigpac.classList.add("activar_consulta_sigpac");
+		botonConsultaSigpacImg[0].classList.add("activar_consulta_sigpac_img");
+	}	
+}, false);
