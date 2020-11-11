@@ -34,12 +34,12 @@
     background-color: white!important;	
 }
 
-/* Eliminar capa plg catastro
+/* Eliminar capa plg catastro*/
 #toc-activelayers div[id*='layerThatContainSelectedFeatures'].toc-item-layer,
 #toc-activelayers div[id*='layerChangingColorWhenHovering'].toc-item-layer,
 #toc-activelayers div[id$='_'].toc-item-layer {
     display: none;
-}*/
+}
 
 /* Elimenar capa contexto */
 #toc-activelayers div[id*='contexto_andalucia'].toc-item-layer,
@@ -59,7 +59,9 @@
     display: none;
 }
 
-/* Elimenar capa layerResaltoBusqueda */
+/* Eliminar capa plg sigpac */
+#toc-activelayers div[id*='layerThatContainSelectedFeaturesSigpac'].toc-item-layer,
+#toc-activelayers div[id*='layerChangingColorWhenHoveringSigpac'].toc-item-layer,
 #toc-activelayers div[id*='layerResaltoBusqueda'].toc-item-layer,
 #toc-activelayers div[id$='_'].toc-item-layer {
     display: none;
