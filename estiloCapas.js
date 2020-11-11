@@ -46,7 +46,7 @@ ayudaOperacion831.on(M.evt.LOAD, function(features) {
 */
 
 /* Estableces escala a capa FCC */
-capaFCC.getImpl().getOL3Layer().setMaxResolution(20);
+//capaFCC.getImpl().getOL3Layer().setMaxResolution(20);
 
 
 /* Cambiar color boton comunicacion catastro */
