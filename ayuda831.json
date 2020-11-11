@@ -104,13 +104,13 @@
       "js": [
       ],
       "css": [
-		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/b9f9c77/estiloGeoperfil.css"
+		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/a88954b/estiloGeoperfil.css"
       ]
     },
     "final": {
       "js": [	
         "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/bed55a2/plugins.js",
-		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/f0f40d7/estiloCapas.js"
+		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/a88954b/estiloCapas.js"
       ],
       "css": []
     }
