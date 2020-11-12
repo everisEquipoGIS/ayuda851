@@ -97,3 +97,10 @@ botonConsultaSigpac.addEventListener("click", function( event ) {
 	}	
 }, false);
  }, 3000);
+
+
+/* GETFEATUREINFOBYLAYERS ACTIVADO */ 
+capas.filter(capa => capa.type === "WMS").forEach(capa => {
+  capa.gf.options.identify = true;
+  capa.gf.options.format = "text/html";
+});
