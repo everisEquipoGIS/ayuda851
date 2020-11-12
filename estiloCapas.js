@@ -41,10 +41,10 @@ textoProvincias.getImpl().getOL3Layer().setMinResolution(35);
 
 
 if (map.getLayers().find(capa => capa.name === "Ayuda_operacion_831") != null) {
-	ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(30);
+	ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(15);
 } else {
 	setTimeout(function(){
-		ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(30);
+		ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(15);
 	}, 3000);
 }
 
@@ -52,7 +52,7 @@ if (map.getLayers().find(capa => capa.name === "Ayuda_operacion_831") != null) {
 /* Estableces escala a capa FCC */
 
 if (map.getLayers().find(capa => capa.name === "Fraccion_cabida_cubierta_arbustiva") != null) {
-	capaFCC.getImpl().getOL3Layer().setMaxResolution(20);
+	capaFCC.getImpl().getOL3Layer().setMaxResolution(35);
 } else {
 	setTimeout(function(){
 		capaFCC.getImpl().getOL3Layer().setMaxResolution(35);
