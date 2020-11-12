@@ -47,6 +47,9 @@ ayudaOperacion831.on(M.evt.LOAD, function(features) {
 
 /* Estableces escala a capa FCC */
 //capaFCC.getImpl().getOL3Layer().setMaxResolution(20);
+capaFCC.on(M.evt.LOAD, function() {
+	capaFCC.getImpl().getOL3Layer().setMaxResolution(20);
+});
 
 
 // Botones comunicacion catastro y sigpac
