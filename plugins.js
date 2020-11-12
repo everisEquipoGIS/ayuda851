@@ -90,7 +90,7 @@ const barraNavegacion = new M.plugin.PLG_Hor_Navigation({
     "scale": {
       "add": true,
       "config": {
-      "scales": [1000, 2500, 5000, 10000, 20000, 25000, 50000, 100000, 150000, 250000, 500000, 1000000]
+      "scales": [1000, 2500, 5000, 10000, 20000, 25000, 40000, 50000, 100000, 150000, 250000, 500000, 1000000]
       }							
     },
     "coordinatesZoom": true,
