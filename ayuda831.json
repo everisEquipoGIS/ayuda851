@@ -32,7 +32,7 @@
 			  "layerType": "geojson",
 			  "layer": {
 				"name": "Provincias",
-				"url": "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/capas/Provincias.geojson",
+				"url": "https://www.juntadeandalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Ayuda_831/IG/capas/Provincias.geojson",
 				"extract": false
 			  },
 			  "style": {
@@ -50,7 +50,7 @@
 			  "layerType": "geojson",
 			  "layer": {
 				"name": "ProvinciasTextos",
-				"url": "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/capas/ProvinciasTextos.geojson",
+				"url": "https://www.juntadeandalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Ayuda_831/IG/ProvinciasTextos.geojson",
 				"extract": false
 			  },
 			  "zindex": 2008
@@ -117,13 +117,13 @@
 		"https://cdn.statically.io/gh/everisEquipoGIS/GetFeatureInfoByLayers/master/1.0.0/getfeatureinfobylayers.min.css",
 		"https://cdn.statically.io/gh/everisEquipoGIS/incendio/main/managelayers.min.css",
 		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/recursos/plg_consulta_sigpac.ol.min.css",
-		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/1e62806/estiloGeoperfil.css"		
+		"https://www.juntadeandalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Ayuda_831/CSS/estiloGeoperfil.css"		
       ]
     },
     "final": {
       "js": [	
-        "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/10b2678/plugins.js",
-		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/fd1b754/estiloCapas.js"
+        "https://www.juntadeandalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Ayuda_831/JS/plugins.js",
+		"https://www.juntadeandalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Ayuda_831/JS/estiloCapas.js"
       ],
       "css": []
     }
