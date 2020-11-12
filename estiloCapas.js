@@ -55,7 +55,7 @@ if (map.getLayers().find(capa => capa.name === "Fraccion_cabida_cubierta_arbusti
 	capaFCC.getImpl().getOL3Layer().setMaxResolution(20);
 } else {
 	setTimeout(function(){
-		capaFCC.getImpl().getOL3Layer().setMaxResolution(20);
+		capaFCC.getImpl().getOL3Layer().setMaxResolution(7);
 	}, 3000);
 }
 
