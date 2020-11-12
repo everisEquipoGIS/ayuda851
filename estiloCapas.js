@@ -45,7 +45,7 @@ if (map.getLayers().find(capa => capa.name === "Ayuda_operacion_831") != null) {
 } else {
 	setTimeout(function(){
 		ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(15);
-	}, 3000);
+	}, 5000);
 }
 
 
@@ -56,7 +56,7 @@ if (map.getLayers().find(capa => capa.name === "Fraccion_cabida_cubierta_arbusti
 } else {
 	setTimeout(function(){
 		capaFCC.getImpl().getOL3Layer().setMaxResolution(35);
-	}, 3000);
+	}, 5000);
 }
 
 // Botones comunicacion catastro y sigpac
