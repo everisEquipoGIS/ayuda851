@@ -34,7 +34,7 @@
     background-color: white!important;	
 }
 
-/* Eliminar capa plg catastro */
+/* Eliminar capa plg catastro*/
 #toc-activelayers div[id*='layerThatContainSelectedFeatures'].toc-item-layer,
 #toc-activelayers div[id*='layerChangingColorWhenHovering'].toc-item-layer,
 #toc-activelayers div[id$='_'].toc-item-layer {
@@ -43,21 +43,26 @@
 
 /* Elimenar capa contexto */
 #toc-activelayers div[id*='contexto_andalucia'].toc-item-layer,
-#toc-activelayers div[id*='layerChangingColorWhenHovering'].toc-item-layer,
 #toc-activelayers div[id$='_'].toc-item-layer {
     display: none;
 }
 
 /* Elimenar capa batimetria */
 #toc-activelayers div[id*='batimetria'].toc-item-layer,
-#toc-activelayers div[id*='layerChangingColorWhenHovering'].toc-item-layer,
 #toc-activelayers div[id$='_'].toc-item-layer {
     display: none;
 }
 
 /* Elimenar capa textoProvincia */
 #toc-activelayers div[id*='ProvinciasTextos'].toc-item-layer,
-#toc-activelayers div[id*='layerChangingColorWhenHovering'].toc-item-layer,
+#toc-activelayers div[id$='_'].toc-item-layer {
+    display: none;
+}
+
+/* Eliminar capa plg sigpac */
+#toc-activelayers div[id*='layerThatContainSelectedFeaturesSigpac'].toc-item-layer,
+#toc-activelayers div[id*='layerChangingColorWhenHoveringSigpac'].toc-item-layer,
+#toc-activelayers div[id*='layerResaltoBusqueda'].toc-item-layer,
 #toc-activelayers div[id$='_'].toc-item-layer {
     display: none;
 }
@@ -72,4 +77,23 @@ div[data-id*='TerminoMunicipal'] .legend {
     background-repeat: no-repeat;
     background-position: left bottom;
     height: 70px;
+}
+
+
+/* Estilo popup */
+.m-popup{
+	background-color: white!important;
+    width: max-content!important;
+    max-width: 550px!important;
+}	
+
+/* Estilo boton desactivar comunicacion catastro */
+.desactivar_comunicacion_catastro{
+	outline: none;
+    filter: saturate(0) brightness(1.75);
+}
+
+/* Estilo boton activar consulta sigpac */
+.activar_consulta_sigpac {     
+    
 }

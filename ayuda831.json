@@ -25,13 +25,14 @@
 				"name": "g13_01_TerminoMunicipal",	
 				"legend": "Términos municipales",
 				"url":"https://www.ideandalucia.es/services/DERA_g13_limites_administrativos/wms?sld_body=%3Csld%3AStyledLayerDescriptor%20version%3D%221.0.0%22%20xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%20xmlns%3Agml%3D%22http%3A%2F%2Fwww.opengis.net%2Fgml%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Asld%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%3E%3Csld%3ANamedLayer%3E%3Csld%3AName%3EDERA_g13_limites_administrativos%3Ag13_01_TerminoMunicipal%3C%2Fsld%3AName%3E%3Csld%3AUserStyle%3E%3Csld%3AFeatureTypeStyle%3E%3Csld%3ARule%3E%3CMaxScaleDenominator%3E150000%3C%2FMaxScaleDenominator%3E%3CTextSymbolizer%3E%3Csld%3AGeometry%3E%3Cogc%3AFunction%20name%3D%22centroid%22%3E%0A%3Cogc%3APropertyName%3Egeom%3C%2Fogc%3APropertyName%3E%3C%2Fogc%3AFunction%3E%3C%2Fsld%3AGeometry%3E%3CLabel%3E%3Cogc%3APropertyName%3Enombre%3C%2Fogc%3APropertyName%3E%3C%2FLabel%3E%3CFont%3E%3CCssParameter%20name%3D%22font-family%22%3EArial%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22font-size%22%3E12%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22font-style%22%3Enormal%3C%2FCssParameter%3E%3CCssParameter%20name%3D%22font-weight%22%3Ebold%3C%2FCssParameter%3E%3C%2FFont%3E%3CLabelPlacement%3E%3CPointPlacement%3E%3CAnchorPoint%3E%3CAnchorPointX%3E0.5%3C%2FAnchorPointX%3E%3CAnchorPointY%3E0.5%3C%2FAnchorPointY%3E%3C%2FAnchorPoint%3E%3C%2FPointPlacement%3E%3C%2FLabelPlacement%3E%3CFill%3E%3CCssParameter%20name%3D%22fill%22%3E%23000000%3C%2FCssParameter%3E%3C%2FFill%3E%3Csld%3AHalo%3E%3Csld%3ARadius%3E2%3C%2Fsld%3ARadius%3E%3Csld%3AFill%3E%3Csld%3ACssParameter%20name%3D%22fill%22%3E%23ffffff%3C%2Fsld%3ACssParameter%3E%3C%2Fsld%3AFill%3E%3C%2Fsld%3AHalo%3E%3CVendorOption%20name%3D%22autoWrap%22%3E100%3C%2FVendorOption%3E%3CVendorOption%20name%3D%22maxDisplacement%22%3E50%3C%2FVendorOption%3E%3CVendorOption%20name%3D%22repeat%22%3E1%3C%2FVendorOption%3E%3C%2FTextSymbolizer%3E%3C%2Fsld%3ARule%3E%3Csld%3ARule%3E%3Csld%3ALineSymbolizer%3E%3Csld%3AStroke%3E%3Csld%3ACssParameter%20name%3D%22stroke%22%3E%236dcc98%3C%2Fsld%3ACssParameter%3E%3Csld%3ACssParameter%20name%3D%22stroke-linecap%22%3Eround%3C%2Fsld%3ACssParameter%3E%3Csld%3ACssParameter%20name%3D%22stroke-linejoin%22%3Eround%3C%2Fsld%3ACssParameter%3E%3Csld%3ACssParameter%20name%3D%22stroke-width%22%3E0.8%3C%2Fsld%3ACssParameter%3E%3C%2Fsld%3AStroke%3E%3C%2Fsld%3ALineSymbolizer%3E%3C%2Fsld%3ARule%3E%3C%2Fsld%3AFeatureTypeStyle%3E%3C%2Fsld%3AUserStyle%3E%3C%2Fsld%3ANamedLayer%3E%3C%2Fsld%3AStyledLayerDescriptor%3E", 
-				"tiled": true
+				"tiled": true,
+				"zindex": 2006
 			},
 			{
 			  "layerType": "geojson",
 			  "layer": {
 				"name": "Provincias",
-				"url": "https://www.cma.junta-andalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Ayuda_831/IG/Provincias.geojson",
+				"url": "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/capas/Provincias.geojson",
 				"extract": false
 			  },
 			  "style": {
@@ -42,29 +43,87 @@
 					"width": 4
 				  }
 				}
-			  }
+			  },
+			  "zindex": 2007
 			},
 			{
 			  "layerType": "geojson",
 			  "layer": {
 				"name": "ProvinciasTextos",
-				"url": "https://www.cma.junta-andalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Ayuda_831/IG/ProvinciasTextos.geojson",
+				"url": "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/capas/ProvinciasTextos.geojson",
 				"extract": false
-			  }
+			  },
+			  "zindex": 2008
+			},
+			{
+				"layerType": "wms",
+				"name": "Ayuda_operacion_831",
+				"legend": "Ayuda Operación 831",
+				"url": "https://www.juntadeandalucia.es//medioambiente/mapwms/REDIAM_informacion_ref_ayuda_831?",
+				"tiled": true,
+				"zindex": 2005
+			},
+			{
+				"layerType": "wms",
+				"name": "Fraccion_cabida_cubierta_arbustiva",
+				"legend": "Fracción de Cabida de Cubierta Arbustiva",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_capas_apoyo_ayuda_831?",
+				"tiled": true,
+				"zindex": 2003
+			},
+			{
+				"layerType": "wms",
+				"name": "eennpp",
+				"legend": "Espacios Naturales Protegidos (EENNPP)",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_capas_apoyo_ayuda_831?",
+				"tiled": true,
+				"zindex": 2002,				
+				"visibility": false
+			},
+			{
+				"layerType": "wms",
+				"name": "areas_protegidas_intern",
+				"legend": "Áreas protegidas por instrumentos internacionales",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_capas_apoyo_ayuda_831?",
+				"tiled": true,
+				"zindex": 2001,				
+				"visibility": false
+			},
+			{
+				"layerType": "wms",
+				"name": "red_natura_2000",
+				"legend": "Red Natura 2000",
+				"url": "https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_capas_apoyo_ayuda_831?",
+				"tiled": true,
+				"zindex": 2000,				
+				"visibility": false
 			}
   ],
   "scripts": {
     "inicio": {
       "js": [
-      ],
+		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/recursos/plg_comunicacion_catastro.ol.min.js",
+		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/recursos/plg_activate.ol.min.js",
+		"https://cdn.statically.io/gh/everisEquipoGIS/PLG_Hor_Navigation/master/1.1.0/plg_hor_navigation.ol.min.js",
+		"https://mapea4-sigc.juntadeandalucia.es/plugins/measurebar/measurebar-1.0.0.ol.min.js",
+		"https://cdn.statically.io/gh/everisEquipoGIS/GetFeatureInfoByLayers/master/1.0.0/getfeatureinfobylayers.ol.min.js",
+		"https://cdn.statically.io/gh/everisEquipoGIS/incendio/main/managelayers.ol.min.js",
+		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/recursos/plg_consulta_sigpac.ol.min.js"
+	],
       "css": [
-		"https://www.cma.junta-andalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Ayuda_831/CSS/estiloGeoperfil.css"
+		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/recursos/plg_comunicacion_catastro.ol.min.css",
+		"https://cdn.statically.io/gh/everisEquipoGIS/PLG_Hor_Navigation/master/1.1.0/plg_hor_navigation.ol.min.css",
+		"https://mapea4-sigc.juntadeandalucia.es/plugins/measurebar/measurebar-1.0.0.min.css",
+		"https://cdn.statically.io/gh/everisEquipoGIS/GetFeatureInfoByLayers/master/1.0.0/getfeatureinfobylayers.min.css",
+		"https://cdn.statically.io/gh/everisEquipoGIS/incendio/main/managelayers.min.css",
+		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/recursos/plg_consulta_sigpac.ol.min.css",
+		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/1e62806/estiloGeoperfil.css"		
       ]
     },
     "final": {
-      "js": [	  
-		"https://www.cma.junta-andalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Ayuda_831/JS/estiloCapas.js",
-        "https://www.cma.junta-andalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Ayuda_831/JS/plugins.js"
+      "js": [	
+        "https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/10b2678/plugins.js",
+		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/fd1b754/estiloCapas.js"
       ],
       "css": []
     }
