@@ -41,10 +41,10 @@ textoProvincias.getImpl().getOL3Layer().setMinResolution(35);
 
 
 if (map.getLayers().find(capa => capa.name === "Ayuda_operacion_831") != null) {
-	ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(15);
+	ayudaOperacion831.getImpl().getOL3Layer().setMaxScale(40000);
 } else {
 	setTimeout(function(){
-		ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(15);
+		ayudaOperacion831.getImpl().getOL3Layer().setMaxScale(40000);
 	}, 5000);
 }
 
