@@ -41,26 +41,23 @@ textoProvincias.getImpl().getOL3Layer().setMinResolution(35);
 
 
 if (map.getLayers().find(capa => capa.name === "Ayuda_operacion_831") != null) {
-	ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(14);
+	ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(14.13284877851807);
 } else {
 	setTimeout(function(){
-		ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(14);
+		ayudaOperacion831.getImpl().getOL3Layer().setMaxResolution(14.13284877851807);
 	}, 5000);
 }
 
 
 /* Estableces escala a capa FCC */
 
-capaFCC.gf.options.maxResolution = 7;
-
-/*
 if (map.getLayers().find(capa => capa.name === "Fraccion_cabida_cubierta_arbustiva") != null) {
-	capaFCC.getImpl().getOL3Layer().setMaxResolution(60);
+	capaFCC.getImpl().getOL3Layer().setMaxResolution(7.066424389259035);
 } else {
 	setTimeout(function(){
-		capaFCC.getImpl().getOL3Layer().setMaxResolution(60);
+		capaFCC.getImpl().getOL3Layer().setMaxResolution(7.066424389259035);
 	}, 5000);
-}*/
+}
 
 // Botones comunicacion catastro y sigpac
 setTimeout(function(){
