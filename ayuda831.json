@@ -108,7 +108,7 @@
 		"https://mapea4-sigc.juntadeandalucia.es/plugins/measurebar/measurebar-1.0.0.ol.min.js",
 		"https://cdn.statically.io/gh/everisEquipoGIS/GetFeatureInfoByLayers/master/1.0.0/getfeatureinfobylayers.ol.min.js",
 		"https://cdn.statically.io/gh/everisEquipoGIS/incendio/main/managelayers.ol.min.js",
-		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/recursos/plg_consulta_sigpac.ol.min.js"
+		"http://10.140.88.78:8082/plg_consulta_sigpac/plg_consulta_sigpac.ol.min.js"
 	],
       "css": [
 		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/recursos/plg_comunicacion_catastro.ol.min.css",
@@ -116,7 +116,7 @@
 		"https://mapea4-sigc.juntadeandalucia.es/plugins/measurebar/measurebar-1.0.0.min.css",
 		"https://cdn.statically.io/gh/everisEquipoGIS/GetFeatureInfoByLayers/master/1.0.0/getfeatureinfobylayers.min.css",
 		"https://cdn.statically.io/gh/everisEquipoGIS/incendio/main/managelayers.min.css",
-		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/develop/recursos/plg_consulta_sigpac.ol.min.css",
+		"http://10.140.88.78:8082/plg_consulta_sigpac/plg_consulta_sigpac.ol.min.css",
 		"https://cdn.statically.io/gh/everisEquipoGIS/ayuda851/1e62806/estiloGeoperfil.css"		
       ]
     },
