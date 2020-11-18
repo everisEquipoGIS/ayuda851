@@ -3,7 +3,7 @@
   "controls": ["mouse"],
   "projection": "EPSG:25830*m",
   "zoom": 2,
-  "wmcfiles": ["https://www.juntadeandalucia.es/medioambiente/servtc5/ventana/documentos/incendios/server/mapa_base.xml"],
+  "wmcfiles": ["https://www.juntadeandalucia.es/medioambiente/servtc5/ventana/documentos/GR_CONFIGURABLES/DATOS/Incendio_Huelva2020/IG/mapa_base.xml"],
   "constructionLayers": [
 			{
 			  "layerType": "wms",
