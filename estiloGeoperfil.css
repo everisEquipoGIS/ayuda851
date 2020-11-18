@@ -97,3 +97,8 @@ div[data-id*='TerminoMunicipal'] .legend {
 .activar_consulta_sigpac {     
     
 }
+
+/* Estilo mouse */
+.m-panel.m-map-info.m-with-mouse{
+	bottom: -180px;
+}
